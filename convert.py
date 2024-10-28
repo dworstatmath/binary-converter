@@ -13,10 +13,11 @@ def dectobi(dec):
     bi = bi[::-1]
     return[int(bi)]
 def bitodec(bi):
+    bi=str(bi)
     bi2=bi[::-1]
     dec=0
     for i in range(len(bi2)):
         if int(bi2[i]) == 1:
             dec+=2**i
     return dec
-print(bitodec("10101"))
+print(bitodec("101"))
